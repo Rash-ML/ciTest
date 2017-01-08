@@ -16,6 +16,9 @@
 		84432B351E222FDB006DF352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84432B331E222FDB006DF352 /* LaunchScreen.storyboard */; };
 		84432B401E222FDB006DF352 /* bitriseTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432B3F1E222FDB006DF352 /* bitriseTestTests.swift */; };
 		84432B4B1E222FDB006DF352 /* bitriseTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432B4A1E222FDB006DF352 /* bitriseTestUITests.swift */; };
+		84432B671E2234D1006DF352 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432B661E2234D1006DF352 /* Person.swift */; };
+		84432B691E223650006DF352 /* testPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432B681E223650006DF352 /* testPerson.swift */; };
+		84432B6A1E2238E1006DF352 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432B661E2234D1006DF352 /* Person.swift */; };
 		FFE87845A7C472BF6547B655 /* Pods_bitriseTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7DDF71A61BF6414BFD50D9 /* Pods_bitriseTestUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,8 @@
 		84432B461E222FDB006DF352 /* bitriseTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitriseTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84432B4A1E222FDB006DF352 /* bitriseTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitriseTestUITests.swift; sourceTree = "<group>"; };
 		84432B4C1E222FDB006DF352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84432B661E2234D1006DF352 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		84432B681E223650006DF352 /* testPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPerson.swift; sourceTree = "<group>"; };
 		9D7DDF71A61BF6414BFD50D9 /* Pods_bitriseTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bitriseTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C73988D5446C9B991B233D /* Pods-bitriseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitriseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitriseTest/Pods-bitriseTest.release.xcconfig"; sourceTree = "<group>"; };
 		D0F844C797D453FECFA36247 /* Pods_bitriseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bitriseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +121,7 @@
 			children = (
 				84432B2A1E222FDB006DF352 /* AppDelegate.swift */,
 				84432B2C1E222FDB006DF352 /* ViewController.swift */,
+				84432B661E2234D1006DF352 /* Person.swift */,
 				84432B2E1E222FDB006DF352 /* Main.storyboard */,
 				84432B311E222FDB006DF352 /* Assets.xcassets */,
 				84432B331E222FDB006DF352 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 			children = (
 				84432B3F1E222FDB006DF352 /* bitriseTestTests.swift */,
 				84432B411E222FDB006DF352 /* Info.plist */,
+				84432B681E223650006DF352 /* testPerson.swift */,
 			);
 			path = bitriseTestTests;
 			sourceTree = "<group>";
@@ -248,7 +255,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MCY4CDK95D;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 84432B261E222FDB006DF352;
 					};
 					84432B451E222FDB006DF352 = {
 						CreatedOnToolsVersion = 8.0;
@@ -448,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84432B671E2234D1006DF352 /* Person.swift in Sources */,
 				84432B2D1E222FDB006DF352 /* ViewController.swift in Sources */,
 				84432B2B1E222FDB006DF352 /* AppDelegate.swift in Sources */,
 			);
@@ -457,6 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84432B6A1E2238E1006DF352 /* Person.swift in Sources */,
+				84432B691E223650006DF352 /* testPerson.swift in Sources */,
 				84432B401E222FDB006DF352 /* bitriseTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,14 +637,12 @@
 			baseConfigurationReference = 086EDB8BADF13C8740377604 /* Pods-bitriseTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = MCY4CDK95D;
 				INFOPLIST_FILE = bitriseTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rash1ironpunch-Gmail.com.bitriseTestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitriseTest.app/bitriseTest";
 			};
 			name = Debug;
 		};
@@ -644,14 +651,12 @@
 			baseConfigurationReference = D29C7FE3B9812A746308689D /* Pods-bitriseTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = MCY4CDK95D;
 				INFOPLIST_FILE = bitriseTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rash1ironpunch-Gmail.com.bitriseTestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitriseTest.app/bitriseTest";
 			};
 			name = Release;
 		};
@@ -704,6 +709,7 @@
 				84432B511E222FDB006DF352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84432B521E222FDB006DF352 /* Build configuration list for PBXNativeTarget "bitriseTestTests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +718,7 @@
 				84432B541E222FDB006DF352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84432B551E222FDB006DF352 /* Build configuration list for PBXNativeTarget "bitriseTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +727,7 @@
 				84432B571E222FDB006DF352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
