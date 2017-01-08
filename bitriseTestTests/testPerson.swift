@@ -28,10 +28,12 @@ class testPerson: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let mockString = "{\"username\" : \"ghasem\" ,\"age\" : 56}"
+        let mockString = "{\"username\" : \"gholie\" ,\"age\" : 56}"
         
         let newMan = Person(JSONString: mockString)
-        XCTAssertNil(newMan?.weight,"user wieght is bull shit")
+        XCTAssertEqual(newMan?.username,
+                       "gholie",
+                       "vay esmesh ghasem nist !!!.....gholie !!!")
         
         
         
