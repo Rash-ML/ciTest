@@ -16,7 +16,7 @@ class Person: Mappable {
     var array: [AnyObject]?
     var dictionary: [String : AnyObject] = [:]
     var bestFriend: Person?                       // Nested User object
-    var friends: [Person]?                        // Array of Users...blah blah blah
+    var friends: [Person]?                        // Array of Users...blah blah blah...try again
     var birthday: Date?
     
     required init?(map: Map) {
